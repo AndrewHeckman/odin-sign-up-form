@@ -1,0 +1,62 @@
+@font-face {
+  font-family: norse-bold;
+  src: url(fonts/Norse-Bold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+#banner {
+  background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: cover;
+  flex: 1;
+
+  justify-content: space-between;
+}
+
+#logo {
+  margin-top: 20vh;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  max-height: 8rem;
+  justify-content: center;
+}
+
+#image-credit{
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+#content {
+  flex: 2;
+}
+
+#logo h1{
+  color: white;
+  font-family: norse-bold;
+  font-size: 6rem;
+  align-self: center;
+}
+
+#image-credit a{
+  color: inherit;
+}
