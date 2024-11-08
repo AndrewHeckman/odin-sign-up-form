@@ -9,11 +9,17 @@
 }
 
 :root {
+  --odin-green: #596d48;
+  --default-input-border: #e5e7eb;
   font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 body {
   height: 100vh;
+}
+
+label {
+  display: block;
 }
 
 .container {
@@ -48,6 +54,11 @@ body {
 
 #content {
   flex: 2;
+  background-color: rgb(240, 240, 240);
+}
+
+#form {
+  background-color: white;
 }
 
 #logo h1{
@@ -59,4 +70,25 @@ body {
 
 #image-credit a{
   color: inherit;
+}
+
+#content > div{
+  flex: 1;
+  padding-left: 2rem;
+  padding-right: 14rem;
+}
+
+#hero p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#submit button{
+  color: white;
+  background-color: var(--odin-green);
+}
+
+#submit a{
+  color: var(--odin-green);
+  text-decoration: none;
 }
