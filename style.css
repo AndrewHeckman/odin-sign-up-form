@@ -20,6 +20,16 @@ body {
 
 label {
   display: block;
+  font-size: .8rem;
+}
+
+input {
+  border: 1px solid var(--default-input-border);
+  border-radius: 4px;
+  width: 100%;
+  max-width: 48ch;
+  min-width: 24ch;
+  height: 1.5rem;
 }
 
 .container {
@@ -28,6 +38,26 @@ label {
 
 .column {
   flex-direction: column;
+}
+
+.input-row {
+  gap: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  justify-content: left;
+}
+
+.input-wrapper {
+  flex: 0 1 48ch;
+}
+
+input[id*="password"]:invalid {
+  border-color: red;
+}
+
+input[id*="password"]:invalid::after {
+  color: red;
+  content: "* Passwords do not match";
 }
 
 #banner {
@@ -60,11 +90,20 @@ label {
 #hero {
   justify-content: end;
   padding-bottom: 3em;
+  flex: 1;
+  max-width: 96ch;
 }
 
 #form {
   background-color: white;
   box-shadow: 0px 2px 4px 0px #d3d3d3;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  flex: 0;
+}
+
+#submit {
+  flex: 1;
 }
 
 #logo h1{
@@ -79,9 +118,7 @@ label {
 }
 
 #content > div{
-  flex: 1;
   padding-left: 2rem;
-  padding-right: 14rem;
 }
 
 #hero p {
